@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+table 
+{
+border: 1px solid black;
+border-collapse:collapse;
+width:60%;
+padding:15px;
+}
+th, td
+{border: 1px solid black;
+border-collapse:collapse;
+padding:15px;
+}
+td#td1
+{text-align:left;}
+td#td2
+{text-align:center;}
+td#td3
+{text-align:right;}
+</style>
+
+</head>
+
+<body>
+
+<table style="margin-left:20%;"><!--first table-->
+<tr>
+<td id="td1">left</td>
+<td id="td2">center</td>
+<td id="td3">right</td>
+</tr>
+<tr>
+<td id="td1">left</td>
+<td id="td2">center</td>
+<td id="td3">right</td>
+</tr>
+<tr>
+<td id="td1">left</td>
+<td id="td2">center</td>
+<td id="td3">right</td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<table style="margin-left:20%;"><!--table 2-->
+<tr>
+<th colspan="6"></th>
+</tr>
+<tr>
+<td rowspan="4"></td>
+<td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td>
+<td colspan="3" rowspan="2"></td><td></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td colspan="6"></td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<table style="margin-left:20%;"><!--table 3-->
+<tr>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+      <table style="width:102%;"><!--The nested table. 102% has no significance. It's just a random number-->
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+         </tr>
+<tr>
+          <td></td>
+         </tr>
+<tr>
+          <td></td>
+         </tr>
+
+      </table>
+    </td>
+
+
+<td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td>
+</tr>
+</tr>
+</table>
+
+<br>
+
+<table style="margin-left:20%;"><!--table 4-->
+<tr style="background-color:darkolivegreen"><!--Note:I spent 5 minutes looking for this color! :P -->
+<td colspan="3"></td>
+</tr>
+<tr>
+<td></td>
+<td align="center"><img src="bluefrog.jpeg" alt="Blue frog"></td>
+<td></td>
+</tr>
+<tr style="background-color:mediumblue"><!--Wasn't jobless enough to look for this one-->
+<td colspan="3"></td>
+</tr>
+</table>
