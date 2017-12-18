@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body { background-image:url("https://cdn.pixabay.com/photo/2012/04/10/16/57/chevron-26402_1280.png");
+       background-repeat: repeat-x;  }
+
+div{ background-color : rgba(255, 211, 199, 0.38);
+     color:black;
+     border:2px solid black;
+     width:379px;
+     margin:40px 500px;}
+
+textarea{ float:left;}
+li{margin:0px; padding:0px;}
+li:hover{ margin:0px;
+          cursor:pointer;
+          background-color : grey;}
+
+
+
+</style>
+</head>
+
+<body>
+<button onclick = "strikeout();"> Strike out all the enteries!</button>
+
+<div><i>YOUR TO-DOs</i><br>
+
+<textarea rows="2" cols="50" id="addtodo" placeholder="Add a new todo and hit enter" ></textarea>
+
+<br><ul id="ul1">
+</ul>
+
+</div>
+
+<script>
+
+function addto()
+{
+ var li = document.createElement("li");  
+ var newtext = document.getElementById("addtodo").value;
+ var x = document.createTextNode(newtext);
+ li.appendChild(x);
+ var ul = document.getElementById("ul1");
+ ul.appendChild(li);
+ document.getElementById("addtodo").value="";
+
+}
+
+function strikeout()
+{
+var lis= document.getElementsByTagName('ul')[0];
+for(i=0; i<lis.getElementsByTagName('li').length; i++)
+lis.getElementsByTagName('li')[i].style.textDecoration="line-through";
+}
+var elem = document.getElementById("addtodo");
+elem.onkeyup = function(e)
+{
+    if(e.keyCode == 13)
+       addto();
+}
+
+</script>
+</body>
+</html>
+
+       
